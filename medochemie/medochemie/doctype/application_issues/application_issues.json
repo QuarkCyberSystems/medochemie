@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-06-26 11:25:05.049769",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_0dn6",
+  "naming_series",
+  "subject",
+  "opening_date",
+  "column_break_itrs",
+  "status",
+  "priority",
+  "sb_details",
+  "description",
+  "steps_to_reproduce",
+  "actual_vs_expected",
+  "evidence",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_0dn6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "AISS-.MM.-.YYYY.-",
+   "print_hide": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "General Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "opening_date",
+   "fieldtype": "Date",
+   "label": "Opening Date",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_itrs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nReplied\nOn Hold\nResolved\nClosed",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "no_copy": 1,
+   "options": "Critical (P1) Bugs causing system inoperability or data loss.\nHigh (P2) Bugs affecting major functionality without crashing the system.\nMedium (P3) Bugs with moderate impact.\nLow (P4) Minor bugs with limited user impact.\nTrivial (P5) Negligible impact bugs."
+  },
+  {
+   "collapsible_depends_on": "eval:doc.status!=\"Closed\"",
+   "fieldname": "sb_details",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "evidence",
+   "fieldtype": "Attach",
+   "label": "Screenshots/Attachments",
+   "no_copy": 1,
+   "options": "Application Issues",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "steps_to_reproduce",
+   "fieldtype": "Text Editor",
+   "label": "Steps to Reproduce",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "actual_vs_expected",
+   "fieldtype": "Text Editor",
+   "label": "Expected vs. Actual Result"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Application Issues",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-11 23:53:42.790181",
+ "modified_by": "Administrator",
+ "module": "Medochemie",
+ "name": "Application Issues",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Open"
+  },
+  {
+   "color": "Gray",
+   "title": "Close"
+  },
+  {
+   "color": "Gray",
+   "title": "Resolved"
+  },
+  {
+   "color": "Yellow",
+   "title": "On Hold"
+  }
+ ],
+ "track_changes": 1
+}

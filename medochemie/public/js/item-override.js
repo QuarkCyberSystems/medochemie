@@ -1,0 +1,1 @@
+/home/erp_admin/frappe-bench/apps/medochemie/medochemie/overrides/item-override.js

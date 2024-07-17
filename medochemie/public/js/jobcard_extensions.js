@@ -1,0 +1,1 @@
+/home/erp_admin/frappe-bench/apps/medochemie/medochemie/weighing_module/jobcard_extensions.js

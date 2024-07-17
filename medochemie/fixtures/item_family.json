@@ -1,0 +1,98 @@
+[
+ {
+  "code": null,
+  "description": "Bulk Product",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2024-04-16 12:48:51.164350",
+  "name": "Bulk Product"
+ },
+ {
+  "code": null,
+  "description": "Auxiliary materials",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2024-04-16 12:51:05.468860",
+  "name": "Auxiliary materials"
+ },
+ {
+  "code": null,
+  "description": "Critical Non-BOM",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2024-04-16 12:52:03.244807",
+  "name": "Critical Non-BOM"
+ },
+ {
+  "code": null,
+  "description": "Non-Critical Non-BOM",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2024-04-16 12:52:21.135182",
+  "name": "Non-Critical Non-BOM"
+ },
+ {
+  "code": null,
+  "description": "Consumables",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2023-06-14 09:51:49.479244",
+  "name": "Consumables"
+ },
+ {
+  "code": null,
+  "description": "Finished Products",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2023-06-14 10:01:24.319825",
+  "name": "Finished Products"
+ },
+ {
+  "code": null,
+  "description": "Packing Materials",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2023-06-14 09:51:02.500274",
+  "name": "Packing Materials"
+ },
+ {
+  "code": null,
+  "description": "Spare Parts",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2023-06-14 09:50:37.663942",
+  "name": "Spare Parts"
+ },
+ {
+  "code": null,
+  "description": "Raw Materials",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2023-06-14 10:02:06.279221",
+  "name": "Raw Materials"
+ },
+ {
+  "code": null,
+  "description": "Excipients",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2023-06-14 09:52:54.847187",
+  "name": "Excipients"
+ },
+ {
+  "code": null,
+  "description": "Active Pharmaceutical Ingredients",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2023-06-14 09:52:37.702353",
+  "name": "Active Pharmaceutical Ingredients"
+ },
+ {
+  "code": null,
+  "description": "Semi-finished",
+  "docstatus": 0,
+  "doctype": "Item Family",
+  "modified": "2023-06-14 09:54:52.719337",
+  "name": "Semi-finished"
+ }
+]

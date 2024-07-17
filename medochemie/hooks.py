@@ -12,7 +12,9 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/medochemie/css/medochemie.css"
-# app_include_js = "/assets/medochemie/js/medochemie.js"
+app_include_js = "/assets/medochemie/js/item-override.js"
+#app_include_js = "/assets/medochemie/js/jobcard_extensions.js"
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/medochemie/css/medochemie.css"
@@ -139,9 +141,16 @@ app_license = "MIT"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "medochemie.event.get_events"
-# }
+
+override_whitelisted_methods = {
+	"frappe.api.resource.BOM": "medochemie.api.custom_get_bom",
+ }
+
+whitelisted = [
+    # ... existing whitelisted functions ...
+    'medochemie.weighing_module.jobcard_extensions.check_job_card_status',
+]
+
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
@@ -199,3 +208,8 @@ app_license = "MIT"
 # auth_hooks = [
 #	"medochemie.auth.validate"
 # ]
+
+
+fixtures = [
+ 	"Item Family",
+]
