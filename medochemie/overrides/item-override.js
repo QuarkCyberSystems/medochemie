@@ -15,6 +15,13 @@ frappe.ui.form.on('BOM', {
     onload_post_render: function(frm) {
         // Filter items with product group "Materials" or "API"
         
+        frappe.msgprint({
+            title: __('Diactivating BOM`s'),
+            indicator: 'green',
+            message: 'All active R&D BOM`s will be deactivated'
+        });
+        
+
         frm.set_query("item_code", "items", function() {
             return {
                 filters: [

@@ -13,6 +13,7 @@
   "uom",
   "custom_narcotic",
   "weigh_function",
+  "custom_storage_location",
   "col_break2",
   "rate",
   "weighted_qty"
@@ -88,12 +89,17 @@
    "fieldtype": "Button",
    "in_list_view": 1,
    "label": "Weigh Function"
+  },
+  {
+   "fieldname": "custom_storage_location",
+   "fieldtype": "Data",
+   "label": "Storage Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-04-26 14:18:17.086146",
+ "modified": "2024-08-27 09:22:06.021920",
  "modified_by": "Administrator",
  "module": "Medochemie",
  "name": "BOM Weighed Items",

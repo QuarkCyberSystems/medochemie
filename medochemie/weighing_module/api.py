@@ -4,6 +4,7 @@ import json
 
 from frappe.model.document import Document
 from frappe.model.docstatus import DocStatus
+from frappe.auth import LoginManager
 
 #class Api(Document):
     
@@ -30,8 +31,7 @@ def register_batch_hooks():
 
 # Call the hook registration function
 #register_batch_hooks()
-
-
+      
 @frappe.whitelist()
 def get(name):
 
@@ -135,9 +135,10 @@ def custom_get_bom(bom_name):
        # WHERE t1.parent = %(parent)s AND t1.docstatus = 1;
     #""", values=values, as_dict=1)
 
+    # t2.custom_flameable AS flameable 
 
     data = frappe.db.sql("""
-        SELECT t1.name, t1.idx, t1.item_code, t1.item_name, t1.description, t1.qty, t1.uom, t2.custom_narcotic AS narcotic, t2.custom_flameable AS flameable 
+        SELECT t1.name, t1.idx, t1.item_code, t1.item_name, t1.description, t1.qty, t1.uom, t2.custom_storage_location AS storage_abstract_location
         FROM `tabBOM Item` AS t1 
         JOIN `tabItem` AS t2 
                         ON t1.item_code = t2.item_code
@@ -188,8 +189,6 @@ def save_weighted_items(job_card_name, weighted_items_data=None):
         #return response
     
         for data in obj_weighted_items_data:
-            
-            
             existing_item =  existing_items.get(data.get('item_code'))
             
             if existing_item:

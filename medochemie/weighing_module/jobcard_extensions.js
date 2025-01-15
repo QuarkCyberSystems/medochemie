@@ -2,7 +2,7 @@ frappe.ui.form.on('Work Order', {
 
     add_custom_button_to_check_job_cards: function(frm) {
 
-        alert('Work Order')
+       // alert('Work Order')
 
         // frm.add_custom_button(__('Check Job Card Status'), function() {
         //     frappe.call({
@@ -33,7 +33,7 @@ frappe.ui.form.on('Work Order', {
     },
     onload_post_render: function(frm) {
 
-        frm.trigger("add_custom_button_to_check_job_cards");
+        //frm.trigger("add_custom_button_to_check_job_cards");
 
     }
 

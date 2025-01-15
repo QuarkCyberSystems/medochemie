@@ -13,6 +13,8 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/medochemie/css/medochemie.css"
 app_include_js = "/assets/medochemie/js/item-override.js"
+app_include_js = "/assets/medochemie/js/form-override.js"
+
 #app_include_js = "/assets/medochemie/js/jobcard_extensions.js"
 
 
@@ -100,6 +102,10 @@ app_include_js = "/assets/medochemie/js/item-override.js"
 #	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
+
+# on_login = "medochemie.overrides.successful_login"
+# on_session_creation = "medochemie.overrides.on_session_creation"
+
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -149,6 +155,10 @@ override_whitelisted_methods = {
 whitelisted = [
     # ... existing whitelisted functions ...
     'medochemie.weighing_module.jobcard_extensions.check_job_card_status',
+    # 'medochemie.weighing_module.user_validation.validate_usr',
+    # 'medochemie.weighing_module.user_validation.validate_usr_new',
+
+    # 'medochemie.weighing_module.user_validation.validate_usr1',
 ]
 
 #
