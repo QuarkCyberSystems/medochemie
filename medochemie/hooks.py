@@ -211,6 +211,43 @@ whitelisted = [
 #		"doctype": "{doctype_4}"
 #	}
 # ]
+# https://erpnext.medochemie.com/app/custom-field/Item-type
+
+fixtures = [
+	{
+		"dt": "Custom Field", "filters": [
+			[
+				"name", "in", [
+					'Item-misc',
+					'Item-type'
+
+				]
+			]
+		],
+	},
+	{
+		"dt": "Property Setter", "filters": [
+			[
+				"name", "in", [
+					'Item-main-field_order',
+                    'Item-warranty_period-hidden',
+                    'Item-valuation_method-hidden',
+                    'Item-end_of_life-hidden',
+                    'Item-item_name-label',
+                    'Item-barcodes-hidden',
+                    'Item-item_code-reqd',
+                    'Item-item_code-hidden',
+                    'Item-naming_series-hidden',
+                    'Item-naming_series-reqd',
+                    'Item-naming_series-options',
+                    'Item-weight_uom-in_list_view',
+                    'Item-item_group-in_list_view',
+                    'Item-item_name-in_list_view',
+				]
+			]
+		],
+	},
+]
 
 # Authentication and authorization
 # --------------------------------
